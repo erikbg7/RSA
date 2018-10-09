@@ -1,0 +1,28 @@
+{
+  "name": "rsa-cyfrer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "/src/index.js",
+  "scripts": {
+    "test": "mocha -r ts-node/register test/*.spec.ts"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/big-integer": "0.0.31",
+    "@types/bignum": "0.0.29",
+    "@types/crypto-js": "^3.1.43",
+    "@types/node": "^10.11.0",
+    "big-integer": "^1.6.36",
+    "bignum": "^0.13.0",
+    "crypto-random": "^1.0.3",
+    "typescript": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.1.5",
+    "@types/mocha": "^5.2.5",
+    "chai": "^4.2.0",
+    "mocha": "^5.2.0",
+    "ts-node": "^7.0.1"
+  }
+}
