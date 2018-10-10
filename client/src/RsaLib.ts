@@ -50,15 +50,15 @@ export class PrivateKey {
     
 }
 
-export async function generateKeys(length:number): Promise<PrivateKey> {
+export function generateKeys(length:number): PrivateKey {
     let result = new PrivateKey();
-    let p = await getPrime(length/2);
-    let q = await getPrime(length/2);;
+    let p = getPrime(length/2);
+    let q = getPrime(length/2);;
     let phi = p.subtract(1).multiply(q.subtract(1));
     let n = p.multiply(q);
     while(p==q||n.bitLength().toJSNumber()!=length||phi.bitLength().toJSNumber()!=length){
-        p = await getPrime(length/2);
-        q = await getPrime(length/2);
+        p = getPrime(length/2);
+        q = getPrime(length/2);
         phi = p.subtract(1).multiply(q.subtract(1));
         n = p.multiply(q);
     }
@@ -69,5 +69,5 @@ export async function generateKeys(length:number): Promise<PrivateKey> {
     result.publicKey = new PublicKey();
     result.publicKey.mod = n;
     result.publicKey.keyNumber = publicKeyNum;
-    return new Promise<PrivateKey>((value)=>{value(result)});
+    return result;
 }
