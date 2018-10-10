@@ -15,7 +15,7 @@
         ]
     },
     "include": [
-        "src/*", "test/*"
+        "src/*", "test/*", "../client/src/KeyUI.tsx", "../client/tsconfig.json"
     ],
     "exclude": [
         "node_modules",

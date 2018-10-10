@@ -1,6 +1,6 @@
 import 'mocha';
 import { expect } from 'chai';
-import { PrivateKey, PublicKey, expConMod,generateKeys,generatePrime,bigNumToMessage,messageToBigNum} from '../src'
+import { PrivateKey, PublicKey, expConMod,generateKeys,generatePrime,bigNumToMessage,messageToBigNum} from '../src/rsaCutre'
 import * as bigNum from 'bignum'
 
 describe('test del objeto rsaCutre',()=>{

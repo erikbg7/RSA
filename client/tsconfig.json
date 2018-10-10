@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+      "target": "es6",
+      "jsx": "react",
+      "module": "commonjs"
+    },
+    "files":[
+        "app.tsx"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+}
