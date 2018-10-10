@@ -1,5 +1,5 @@
 import * as React from "react";
-import {getPrime, generateKeys} from './RsaLib'
+import {generateKeys} from './RsaLib'
 
 export class KeyUI extends React.Component{
     render(){
