@@ -69,5 +69,6 @@ export function generateKeys(length:number): PrivateKey {
     result.publicKey = new PublicKey();
     result.publicKey.mod = n;
     result.publicKey.keyNumber = publicKeyNum;
+    console.log(result);
     return result;
 }
